@@ -5,11 +5,11 @@
       </div>
       <div class="container">
           <div class="box-games">
-            <ul>
-                <li v-for="(game, index) in games" :key="`game-${index}`">
-                    <games :img="game.thumb" :text="game.series"/>
-                </li>
-            </ul>
+                <ul>
+                    <li v-for="(game, index) in games" :key="`game-${index}`">
+                        <games :img="game.thumb" :text="game.series"/>
+                    </li>
+                </ul>
           </div>
           <span>
               CURRENT SERIES
@@ -131,8 +131,13 @@ export default {
     }
 
     .box-games {
-        display: flex;
+        height: 100%;
 
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .container {
@@ -149,14 +154,19 @@ export default {
             top: -3.5%;
         }
         li {
+            display: list-item;
             padding: 10px;
             margin: 0%;
             width: calc(100% / 6);
             border: 0;
             color: white;
+            height: 300px;
             &:hover {
                 border: 0;
                 color: white;
+            }
+            span {
+                height: 100%;
             }
 
             img {
