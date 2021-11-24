@@ -15,6 +15,11 @@
               CURRENT SERIES
           </span>
       </div>
+      <div class="button-bottom">
+          <span>
+            LOAD MORE
+          </span>
+      </div>
   </div>
 </template>
 
@@ -160,6 +165,20 @@ export default {
                 object-fit: cover;
                 object-position: 0 0;
             }
+        }
+    }
+
+    .button-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        span {
+            cursor: pointer;
+            background:#0c7cec;
+            padding: 10px 50px;
+            margin: 20px 0;
+            border-radius: 20px;
         }
     }
 }
