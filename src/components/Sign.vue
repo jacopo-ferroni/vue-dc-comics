@@ -35,6 +35,9 @@ export default {
             cursor: pointer;
             padding: 15px;
             border: 4px solid #0282f9;
+            &:hover {
+                color: #0282f9;
+            }
         }
         .follow {
             display: flex;
